@@ -1,0 +1,15 @@
+{
+  "name": "testes-cypress",
+  "version": "1.0.0",
+  "description": "Criandos testes com Cypress e Mocha",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "cypress"
+  },
+  "author": "zkd - Matheus Reichemback Stang",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.6.0",
+    "mochawesome": "^7.1.3"
+  }
+}
