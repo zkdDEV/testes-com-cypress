@@ -3,6 +3,7 @@
 describe('Testes para a agenda de contatos', () => {
     beforeEach(() => {
         cy.visit('https://agenda-contatos-react.vercel.app/')
+        cy.wait(2000)
     })
 
     it('Deve adicionar um novo contato a agenda', () => {
@@ -26,8 +27,8 @@ describe('Testes para a agenda de contatos', () => {
         // Salvando dados novos
         cy.get('.alterar').click()
     })
-    it('Deve remover um contato da afenda', () => {
-        // Pegando um elemento <ul></ul> e verificando a quantidade
+    it('Deve remover um contato da agenda', () => {
+        // Pegando as tags <ul></ul> e verificando a quantidade
         cy.get('.sc-eDDNvR.cTVgex').then((contatos) => {
 
             // Armazenando a quantidade
